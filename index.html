@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Single Price Grid Component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      :root {
+        --cyan: hsl(179, 62%, 43%);
+        --bright-yellow: hsl(71, 73%, 54%);
+        --Light-Gray: hsl(204, 43%, 93%);
+        --Grayish-Blue: hsl(218, 22%, 67%);
+        --Light-Graz: hsl(204, 10%, 81%);
+        --cyand: #49bebd;
+      }
+      .top {
+        padding: 20px 20px;
+        background-color: white;
+      }
+      .top h2 {
+        color: var(--cyan);
+      }
+      .top h3 {
+        color: var(--bright-yellow);
+      }
+      .top p {
+        color: var(--Grayish-Blue);
+      }
+      #p2 {
+        color: var(--Light-Gray);
+      }
+      .bottom {
+        display: flex;
+      }
+      .last ul {
+        list-style: none;
+        padding: 0px;
+        color: var(--Light-Gray);
+      }
+      .first,
+      .last {
+        padding: 20px;
+        color: var(--Light-Gray);
+        width: 49%;
+      }
+      .first p {
+        color: var(--Grayish-Blue);
+      }
+
+      button {
+        box-shadow: 3px 3px 8px 1px rgb(128, 122, 122);
+        border-radius: 5px;
+        padding: 10px 10px;
+        display: block;
+        color: bisque;
+        background-color: var(--bright-yellow);
+        height: 40px;
+        width: 100%;
+        border: none;
+      }
+      .first p span {
+        font-size: 1.4rem;
+        color: var(--Light-Gray);
+      }
+      .first {
+        background-color: var(--cyan);
+      }
+      .last {
+        background-color: var(--cyand);
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      main {
+        width: 520px;
+        margin: 0 auto;
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 3px 3px 8px 1px rgb(128, 122, 122);
+      }
+      @media screen and (max-width: 375px) {
+        main,
+        .first,
+        .last, .bottom {
+          width: 100%;
+        }
+        .bottom {
+          display: block;
+        }
+        button{
+          width: 95%;
+        }
+        .top, .first, .last{
+          padding: 25px 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="top">
+        <h2>Join our community</h2>
+        <h3>30-dayhassle-free money back guarantee</h3>
+        <p>
+          Gain access to our full library of tutorials along with expert code
+          reviews. Perfect for any developers who are serious about honing their
+          skills.
+        </p>
+      </section>
+
+      <section class="bottom">
+        <section class="first">
+          <h3>Monthly Subscription</h3>
+          <p><span>&dollar;29</span> per month</p>
+          <p id="p2">Full access for less than &dollar;1 a day</p>
+          <button>sign-Up</button>
+        </section>
+        <section class="last">
+          <h3>Why Us</h3>
+          <ul>
+            <li>Tutorials by industry experts</li>
+            <li>Peer &amp; expert code review</li>
+            <li>Coding exercises</li>
+            <li>Access to our GitHub repos</li>
+            <li>Community forum</li>
+            <li>Flashcard decks</li>
+            <li>New videos every week</li>
+          </ul>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </p>
+    </footer>
+  </body>
+</html>
